@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f29a3c31b5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+        <span>unit converter</span>
+    </nav>
+    <main>
+        <section class="convert">
+            <div>
+                <span>convert</span>
+            </div>
+            <div class="inputConvert">
+                <select id="inputUnit">
+                    <option value="km-miles">km -> miles</option>
+                    <option value="miles-km">miles -> km</option>
+                    <option value="feet-metres">feet -> metres</option>
+                    <option value="metres-feet">metres -> feet</option>
+                    <option value="cm-inches">cm -> inches</option>
+                    <option value="inches-cm">inches -> cm</option>
+                </select>
+                <i class="fa-solid fa-arrow-right-arrow-left changeIcon" id="changeIcon"></i>
+                <input type="number" id="inputValue" class="inputValue">
+                <label id="lblUnitInput" class="lblUnitInput"></label>
+            </div>
+            <div class="outputConvert">
+                <i class="fa-regular fa-heart heartIcon" id="heartIcon"></i>
+                <div>
+                    <label id="result" class="result"></label>
+                    <label id="lblUnitOutput" class="lblUnitOutput"></label>
+                </div>
+            </div>
+        </section>
+        <section class="saved">
+            <div>
+                <span>saved</span>
+            </div>
+            <div>
+                <ul id="listItem"></ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <span>Terms of service</span>
+        <span>Privacy policy</span>
+    </footer>
+    <script src="/js/script.js"></script>
+</body>
+</html>
